@@ -1,0 +1,98 @@
+﻿@layout EmptyLayout
+
+@page "/pengaduanReport"
+
+@using PengaduanMasyarakatApp.Shared.Models;
+@inject WeatherForecastService ForecastService
+@using PengaduanMasyarakatApp.Data
+
+@using System.Globalization;
+
+<h1>Laporan Pengaduan Masyarakat</h1>
+<br />
+
+<div class="row" style="font-size:25px">
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="Tanggal" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9"><RadzenLabel Text="@data.TglPengaduan.ToString("dd MMMM yyyy HH:mm", CultureInfo.InvariantCulture)"></RadzenLabel></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="Judul" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9"><RadzenLabel Text="@data.JudulLaporan"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="NIK" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9"><RadzenLabel Text="@data.NIK"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="Pengaduan" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-8"><RadzenLabel Text="@data.Laporan"></RadzenLabel></div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="Foto" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9"><RadzenImage Path="@data.Foto" Style="width:250px;height:250px;margin-top:10px"></RadzenImage></div>
+
+
+        </div>
+
+        <div class="row" style="margin-top:5px">
+            <div class="col-md-2" style="width: 300px"><RadzenLabel Text="Tgl Tanggapan" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9" style="width: 800px"><RadzenLabel Text="@data.TglTanggapan?.ToString("dd MMMM yyyy HH:mm", CultureInfo.InvariantCulture)"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row" style="margin-top:5px">
+            <div class="col-md-2" style="width: 300px"><RadzenLabel Text="Tanggapan" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9" style="width: 800px"><RadzenLabel Text="@data.Tanggapan"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row" style="margin-top:5px;">
+            <div class="col-md-2" style="width:300px"><RadzenLabel Text="Status" Style="font-weight:bold"></RadzenLabel></div>
+            :
+            <div class="col-md-9"><RadzenLabel Text="@data.Status"></RadzenLabel></div>
+
+        </div>
+
+        <br />
+
+
+    </div>
+
+
+
+</div>
+
+
+@code {
+
+    public PengaduanViewModel data { get; set; }
+
+    protected override void OnInitialized()
+    {
+        data = DataReport.dataReportPengaduan;
+    }
+}

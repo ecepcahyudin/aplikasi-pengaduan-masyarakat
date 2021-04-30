@@ -1,0 +1,18 @@
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.deps.json
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.AssemblyInfoInputs.cache
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.AssemblyInfo.cs
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.csproj.CoreCompileInputs.cache
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.csprojAssemblyReference.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.deps.json
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\bin\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.csprojAssemblyReference.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.AssemblyInfoInputs.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.AssemblyInfo.cs
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.csproj.CoreCompileInputs.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.Shared\obj\Debug\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb

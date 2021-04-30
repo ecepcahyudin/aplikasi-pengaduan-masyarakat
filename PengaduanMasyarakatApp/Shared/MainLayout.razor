@@ -1,0 +1,48 @@
+﻿@inherits LayoutComponentBase
+
+@inject AppState AppState
+
+<RadzenDialog />
+<RadzenNotification />
+<RadzenContextMenu />
+<RadzenTooltip />
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4 auth" style="justify-content: flex-start">
+
+        <RadzenLabel Text=@AppState.ComponentTitle Style="font-weight:bold;font-size:28px">
+
+        </RadzenLabel>
+
+        <LoginDisplay/>
+        @*<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>*@
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+@code{
+
+
+
+    protected override void OnInitialized()
+    {
+        AppState.OnChangeComponentTitle += StateHasChanged;
+        
+
+    }
+
+    public void Dispose()
+    {
+        AppState.OnChangeComponentTitle -= StateHasChanged;
+        
+    }
+
+
+}

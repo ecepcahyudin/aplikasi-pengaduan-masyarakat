@@ -1,0 +1,44 @@
+﻿@page "/rekapPengaduanReport"
+@layout EmptyLayout
+
+@using PengaduanMasyarakatApp.Shared.Models;
+@using System.Globalization;
+
+<h1>Rekap Pengaduan Masyarakat</h1>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>TglPengaduan</th>
+            <th>Judul</th>
+            <th>Status</th>
+            <th>TglTanggapan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in datas)
+        {
+            <tr>
+                <td>@data.TglPengaduan.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)</td>
+                <td>@data.JudulLaporan</td>
+                <td>@data.Status</td>
+                <td>@data.TglTanggapan</td>
+            </tr>
+            jmlData = jmlData + 1;
+        }
+    </tbody>
+</table>
+
+<h3>Jumlah data: @jmlData</h3>
+
+@code {
+
+    public List<PengaduanViewModel> datas { get; set; }
+
+    int jmlData = 0;
+    protected override void OnInitialized()
+    {
+        datas = DataReport.dataReportRekapPengaduan;
+    }
+}

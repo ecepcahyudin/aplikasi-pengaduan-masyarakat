@@ -1,0 +1,236 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.csproj": {}
+  },
+  "projects": {
+    "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\PengaduanMasyarakatApp.DataAccessLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\PengaduanMasyarakatApp.DataAccessLibrary.csproj",
+        "projectName": "PengaduanMasyarakatApp.DataAccessLibrary",
+        "projectPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\PengaduanMasyarakatApp.DataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\Ecep\\.nuget\\packages\\",
+        "outputPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ecep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 1.1.0\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\PengaduanMasyarakatApp.Shared.csproj": {
+                "projectPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\PengaduanMasyarakatApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\PengaduanMasyarakatApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\PengaduanMasyarakatApp.Shared.csproj",
+        "projectName": "PengaduanMasyarakatApp.Shared",
+        "projectPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\PengaduanMasyarakatApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\Ecep\\.nuget\\packages\\",
+        "outputPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ecep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 1.1.0\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.csproj",
+        "projectName": "PengaduanMasyarakatApp",
+        "projectPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.csproj",
+        "packagesPath": "C:\\Users\\Ecep\\.nuget\\packages\\",
+        "outputPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ecep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 1.1.0\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\PengaduanMasyarakatApp.DataAccessLibrary.csproj": {
+                "projectPath": "E:\\Ecep\\Project\\Projek C#\\Blazor\\PengaduanMasyarakatApp\\PengaduanMasyarakatApp.DataAccessLibrary\\PengaduanMasyarakatApp.DataAccessLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[3.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

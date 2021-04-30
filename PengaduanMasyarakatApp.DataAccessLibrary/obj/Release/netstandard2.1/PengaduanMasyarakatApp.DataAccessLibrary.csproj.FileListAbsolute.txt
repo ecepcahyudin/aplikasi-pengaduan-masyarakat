@@ -1,0 +1,24 @@
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.deps.json
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.dll
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.pdb
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csprojAssemblyReference.cache
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.AssemblyInfoInputs.cache
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.AssemblyInfo.cs
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csproj.CoreCompileInputs.cache
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csproj.CopyComplete
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.dll
+E:\Ecep\Aplikasi Pelaporan Pengaduan Masyarakat\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.pdb
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.deps.json
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.dll
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.pdb
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.Shared.dll
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\bin\Release\netstandard2.1\PengaduanMasyarakatApp.Shared.pdb
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csprojAssemblyReference.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.AssemblyInfoInputs.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.AssemblyInfo.cs
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csproj.CoreCompileInputs.cache
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.csproj.CopyComplete
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.dll
+E:\Ecep\Project\Projek C#\Blazor\PengaduanMasyarakatApp\PengaduanMasyarakatApp.DataAccessLibrary\obj\Release\netstandard2.1\PengaduanMasyarakatApp.DataAccessLibrary.pdb

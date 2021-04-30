@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<h3>Assalamualaikum!</h3>
+
+Selamat datang di Aplikasi Pelaporan Pengaduan Masyarakat(APPM).
+
+@*<SurveyPrompt Title="How is Blazor working for you?" />*@
+
+@inject AppState AppState
+
+@code{
+
+    protected override void OnInitialized()
+    {
+        AppState.SetComponentTitle("Home");
+    }
+}

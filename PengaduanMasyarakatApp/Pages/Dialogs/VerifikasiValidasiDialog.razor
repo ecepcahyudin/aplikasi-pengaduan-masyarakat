@@ -1,0 +1,113 @@
+﻿@using PengaduanMasyarakatApp.Shared.Models;
+@using PengaduanMasyarakatApp.DataAccessLibrary.Contracts;
+
+@inject Radzen.DialogService dialogService
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Judul" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenLabel Text="@Data.JudulLaporan"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="NIK" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenLabel Text="@Data.NIK"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Pengaduan" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenLabel Text="@Data.Laporan"></RadzenLabel></div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Foto" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenImage Path="@Data.Foto" Style="width:250px;height:250px;margin-top:10px"></RadzenImage></div>
+
+
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <RadzenCheckBox TValue="bool" @bind-Value="Data.IsLolosVerifikasiValidasi" Style="border:5px;margin-right:5px" />
+                <RadzenLabel Text="Lolos Verifikasi dan Validasi" Style="font-weight:bold"></RadzenLabel>
+
+            </div>
+            
+            <!--<div class="col-md-5"><RadzenLabel Text="Lolos Verifikasi dan Validasi" Style="font-weight:bold"></RadzenLabel></div>-->
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@<!--:
+            <div class="col-md-6"><RadzenCheckBox TValue="bool" @bind-Value="Data.IsLolosVerifikasiValidasi" Style="border:5px" /></div>-->
+
+
+        </div>
+
+        <br />
+        @if (Data.IsLolosVerifikasiValidasi)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <RadzenLabel Text="Pilih petugas yang akan menangani pengaduan ini."></RadzenLabel>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <RadzenDropDown AllowClear="true"
+                                    TValue="string"
+                                    @bind-Value="Data.PetugasId"
+                                    Data="@(petugass?.Select(r => new { Id = r.Id, NamaPetugas = r.Nama }).Distinct())"
+                                    TextProperty="NamaPetugas" ValueProperty="Id"
+                                    FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                                    AllowFiltering="true"
+                                    Placeholder="Pilih Petugas" Style="width:50%"></RadzenDropDown>
+                </div>
+
+
+            </div>
+        }
+
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <RadzenButton Click="@((args) => dialogService.Close(true))" Text="OK" Style="margin-bottom: 10px; width: 150px" />
+                <RadzenButton Click="@((args) => dialogService.Close(false))" ButtonStyle="ButtonStyle.Secondary" Text="Cancel" Style="margin-bottom: 10px; width: 150px" />
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+@code {
+    [Parameter] public PengaduanViewModel Data { get; set; }
+
+    [Inject] IGlobalData GlobalData { get; set; }
+
+    List<PetugasModel> petugass = new List<PetugasModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        petugass = await GlobalData.GetPetugassAsync();
+    }
+}

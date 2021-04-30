@@ -1,0 +1,97 @@
+﻿@using PengaduanMasyarakatApp.Shared.Models;
+@using PengaduanMasyarakatApp.DataAccessLibrary.Contracts;
+
+@inject Radzen.DialogService dialogService
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Judul" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenLabel Text="@Data.JudulLaporan"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="NIK" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenLabel Text="@Data.NIK"></RadzenLabel></div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Pengaduan" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-8"><RadzenLabel Text="@Data.Laporan"></RadzenLabel></div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2"><RadzenLabel Text="Foto" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenImage Path="@Data.Foto" Style="width:250px;height:250px;margin-top:10px"></RadzenImage></div>
+
+
+        </div>
+
+        <div class="row" style="margin-top:5px">
+            <div class="col-md-2"><RadzenLabel Text="Tanggapan" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+            <div class="col-md-9"><RadzenTextArea @bind-Value="@Data.Tanggapan" Rows="5" Style="width:100%"></RadzenTextArea></div>
+
+
+        </div>
+
+        <div class="row" style="margin-top:5px">
+            <div class="col-md-2"><RadzenLabel Text="Status" Style="font-weight:bold"></RadzenLabel></div>
+            @*<div class="col-md-1"><RadzenLabel Text=":"></RadzenLabel></div>*@:
+
+            <div class="col-md-9">
+                <RadzenDropDown AllowClear="true"
+                                TValue="string"
+                                @bind-Value="Data.StatusId"
+                                Data="@(statuss?.Select(r => new { Id = r.Id, NamaStatus = r.NamaStatus }).Where(x=>x.Id=="4" || x.Id=="5"))"
+                                TextProperty="NamaStatus" ValueProperty="Id"
+                                FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                                AllowFiltering="true"
+                                Placeholder="Pilih Status"></RadzenDropDown>
+            </div>
+
+
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-12">
+                <RadzenButton Click="@((args) => dialogService.Close(true))" Text="OK" Style="margin-bottom: 10px; width: 150px" />
+                <RadzenButton Click="@((args) => dialogService.Close(false))" ButtonStyle="ButtonStyle.Secondary" Text="Cancel" Style="margin-bottom: 10px; width: 150px" />
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+@code {
+    [Parameter] public PengaduanViewModel Data { get; set; }
+
+    [Inject] IGlobalData GlobalData { get; set; }
+
+    List<StatusModel> statuss = new List<StatusModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        statuss = await GlobalData.GetStatussAsync();
+    }
+}

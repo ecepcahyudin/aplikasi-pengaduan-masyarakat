@@ -1,0 +1,162 @@
+﻿@page "/daftarPengaduan"
+
+@using PengaduanMasyarakatApp.Shared.Models;
+@using System.Globalization;
+
+@inject TooltipService tooltipService
+
+<div class="row">
+    <div class="col-md-12">
+        <RadzenDropDown AllowClear="true"
+                        TValue="string"
+                        @bind-Value="filter.StatusId"
+                        Data="@(statuss?.Select(r => new { Id = r.Id, NamaStatus = r.NamaStatus }).Distinct())"
+                        TextProperty="NamaStatus" ValueProperty="Id"
+                        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                        AllowFiltering="true"
+                        Placeholder="Pilih Status"></RadzenDropDown>
+
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <RadzenGrid TItem="PengaduanViewModel" Data="@datas"
+                    AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                    AllowPaging="true" PageSize="5"
+                    AllowSorting="true" EditMode="DataGridEditMode.Single"
+                    ColumnWidth="100px">
+
+            <Columns>
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="Id" Title="ID" Visible="false" />
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="TanggapanId" Title="TanggapanId" Visible="false" />
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="TglPengaduan" Title="TglPengaduan"
+                                  Width="60px">
+
+                    <Template Context="data">
+
+                        @data.TglPengaduan.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)
+                    </Template>
+                </RadzenGridColumn>
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="NIK" Title="NIK" Width="35px" Filterable="false" Visible="false" />
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="JudulLaporan" Title="JudulLaporan">
+
+                    <Template Context="data">
+
+                        <p style="white-space:pre-wrap">@data.JudulLaporan</p>
+
+                    </Template>
+                </RadzenGridColumn>
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="Laporan" Title="Laporan" Width="100px" Visible="false" />
+
+                <RadzenGridColumn TItem="PengaduanViewModel"
+                                  Property="Status" Title="Status" Width="100px" />
+
+                <RadzenGridColumn TItem="PengaduanViewModel" Bubble="false" Filterable="false"
+                                  Sortable="false" TextAlign="TextAlign.Center" Width="25px">
+
+                    <Template Context="pengaduan">
+                        <RadzenButton  Icon="info" MouseEnter="@(args => ShowTooltip(args,"Lihat tanggapan",new TooltipOptions(){ Position = TooltipPosition.Left }))"  
+                                      Click="@(args=>LihatTanggapan(pengaduan))" Size="ButtonSize.Small" 
+                                      ButtonStyle="ButtonStyle.Success"></RadzenButton>
+                    </Template>
+
+
+                </RadzenGridColumn>
+
+                <RadzenGridColumn TItem="PengaduanViewModel" Bubble="false" Filterable="false"
+                                  Sortable="false" TextAlign="TextAlign.Center" Width="25px">
+
+                    <Template Context="pengaduan">
+                        <RadzenButton Icon="print" MouseEnter="@(args => ShowTooltip(args,"Cetak",new TooltipOptions(){ Position = TooltipPosition.Left }))"  Size="ButtonSize.Small"
+                                      ButtonStyle="ButtonStyle.Light"
+                                      Click="@(args=>Cetak(pengaduan))">
+
+                        </RadzenButton>
+                    </Template>
+
+
+
+                </RadzenGridColumn>
+
+                <AuthorizeView Roles="Administrators">
+                    <RadzenGridColumn TItem="PengaduanViewModel" Bubble="false" Filterable="false"
+                                      Sortable="false" TextAlign="TextAlign.Center" Width="25px">
+
+                        <Template Context="pengaduan">
+                            <RadzenButton Icon="domain_verification" 
+                                          MouseEnter="@(args => ShowTooltip(args,"Verifikasi dan Validasi",new TooltipOptions(){ Position = TooltipPosition.Left }))" 
+                                          Click="@(args=>VerifikasiValidasi(pengaduan))" Size="ButtonSize.Small" ButtonStyle="ButtonStyle.Secondary"></RadzenButton>
+                        </Template>
+
+
+                    </RadzenGridColumn>
+                </AuthorizeView>
+
+
+                <RadzenGridColumn TItem="PengaduanViewModel" Bubble="false" Filterable="false"
+                                  Sortable="false" TextAlign="TextAlign.Center" Width="25px">
+
+                    <Template Context="pengaduan">
+                        <RadzenButton Icon="emoji_people" 
+                                      MouseEnter="@(args => ShowTooltip(args,"Tindak Lanjut",new TooltipOptions(){ Position = TooltipPosition.Left }))" 
+                                      Click="@(args=>TindakLanjut(pengaduan))" Size="ButtonSize.Small" ButtonStyle="ButtonStyle.Secondary"></RadzenButton>
+                    </Template>
+
+
+                </RadzenGridColumn>
+
+                <AuthorizeView Roles="Administrators">
+                    <RadzenGridColumn TItem="PengaduanViewModel" Bubble="false" Filterable="false"
+                                      Sortable="false" TextAlign="TextAlign.Center" Width="25px">
+
+                        <Template Context="pengaduan">
+                            <RadzenButton Icon="close" 
+                                          MouseEnter="@(args => ShowTooltip(args,"Delete",new TooltipOptions(){ Position = TooltipPosition.Left }))" Size="ButtonSize.Small" 
+                                          ButtonStyle="ButtonStyle.Danger" Click="@(args=>Delete(pengaduan))"></RadzenButton>
+                        </Template>
+
+
+                    </RadzenGridColumn>
+                </AuthorizeView>
+
+
+            </Columns>
+        </RadzenGrid>
+    </div>
+</div>
+
+<div class="row" style="margin-top:5px">
+    <div class="col-md-12">
+
+
+        <RadzenDatePicker Placeholder="TglAwal" TValue="DateTime?" @bind-Value="filter.TglAwal" DateFormat="dd MMMM yyyy"></RadzenDatePicker>
+        <RadzenDatePicker Placeholder="TglAkhir" TValue="DateTime?" @bind-Value="filter.TglAwal" DateFormat="dd MMMM yyyy"></RadzenDatePicker>
+
+        <RadzenTextBox Placeholder="JudulLaporan" @bind-Value="filter.JudulLaporan"></RadzenTextBox>
+        <RadzenTextBox Placeholder="JmlData" @bind-Value="filter.Top" Style="width:5%;margin-right:5px"></RadzenTextBox>
+
+        <RadzenButton Icon="autorenew" Click="Get"></RadzenButton>
+        <RadzenButton Click="CetakRekap" Icon="print"></RadzenButton>
+    </div>
+</div>
+
+@code {
+    void ShowTooltip(ElementReference elementReference, string text, TooltipOptions options = null)
+        => tooltipService.Open(elementReference, text, options);
+}
